@@ -2,7 +2,8 @@ const { Router } = require("express");
 const router = Router();
 const {
     googleInit,
-    googleCallback
+    googleCallback,
+    logOut
 } = require("../controllers/authController")
 
 router.get("/google", googleInit)

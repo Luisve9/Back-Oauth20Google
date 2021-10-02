@@ -29,10 +29,11 @@ mongoose
 
 app.use(
     cors({
-      origin: ["http://localhost:3001","http://localhost:3000","https://accounts.google.com/o/oauth2/v2/auth"],
+      origin: ["http://localhost:3001","http://localhost:3000"],
       credentials: true,
     })
   );
+
 
 app.use(
     session({
